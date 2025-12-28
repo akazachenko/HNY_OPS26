@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сказочный Календарь 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Pangolin&family=Kelly+Slab&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #0c0c0c;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .vasnetsov-font {
+            font-family: 'Ruslan Display', cursive;
+        }
+
+        .folk-border {
+            border-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
+            border: 15px solid transparent;
+            padding: 20px;
+            border-image-source: url('https://picsum.photos/id/1021/200/200'); /* Placeholder for ornate border */
+            border-image-slice: 30;
+        }
+
+        .page-transition {
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Raiffeisen Yellow accents */
+        .raiffeisen-yellow {
+            color: #fee600;
+        }
+        .bg-raiffeisen-yellow {
+            background-color: #fee600;
+        }
+
+        /* Magical Shimmer Effect */
+        .shimmer-text {
+            background: linear-gradient(to right, #fee600 20%, #ffffff 40%, #ffffff 60%, #fee600 80%);
+            background-size: 200% auto;
+            color: #fee600;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        /* Festive Glow */
+        .glow-filter {
+            filter: drop-shadow(0 0 15px rgba(254, 230, 0, 0.5));
+        }
+
+        /* Twinkling stars in the background */
+        .twinkle {
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
